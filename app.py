@@ -24,9 +24,9 @@ body {
 </style>
 """, unsafe_allow_html=True)
 
-translator = pipeline("translation", model="Helsinki-NLP/opus-mt-zh-en")
+translator = pipeline("translation", model="Helsinki-NLP/opus-mt-en-es")
 
-text_to_translate = st.text_area("Please type input: (Example: 你好，很高兴认识你)", value='', height=250, max_chars=500)
+text_to_translate = st.text_area("Please type input: (Example: Hello, how are you today?)", value='', height=250, max_chars=500)
 
 if st.button('Translate'):
     if text_to_translate:
