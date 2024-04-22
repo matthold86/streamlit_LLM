@@ -1,7 +1,7 @@
 import streamlit as st
 from transformers import pipeline
 
-st.title('Translate Chinese to English')
+st.title('Translate English to Spanish')
 
 st.markdown("""
 <style>
